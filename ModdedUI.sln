@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModdedUI", "ModdedUI.csproj", "{B5774712-43A1-44EE-843E-AF11FEC9DDBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CVRUIModLoader", "CVRUIModLoader.csproj", "{B5774712-43A1-44EE-843E-AF11FEC9DDBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

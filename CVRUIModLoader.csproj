@@ -7,8 +7,8 @@
     <ProjectGuid>{B5774712-43A1-44EE-843E-AF11FEC9DDBE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ModdedUI</RootNamespace>
-    <AssemblyName>ModdedUI</AssemblyName>
+    <RootNamespace>CVRUIModLoader</RootNamespace>
+    <AssemblyName>CVRUIModLoader</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
