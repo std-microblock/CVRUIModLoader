@@ -33,8 +33,8 @@ using MelonLoader;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.1.1")]
+[assembly: AssemblyFileVersion("1.0.1.1")]
 
-[assembly: MelonInfo(typeof(microblock.CVRUIModLoader), "CVRUIModLoader", "0.1.0", "MicroBlock")]
+[assembly: MelonInfo(typeof(microblock.CVRUIModLoader), "CVRUIModLoader", "0.1.1", "MicroBlock")]
 [assembly: MelonGame("Alpha Blend Interactive", "ChilloutVR")]
