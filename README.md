@@ -4,6 +4,8 @@ A tempory loader for UI Mods of ChilloutVR
 
 ChilloutVR UI Mods 的加载器
 
+[Mod List | Mod列表](https://github.com/MicroCBer/CVRUIModLoader)
+
 ![image](https://user-images.githubusercontent.com/66859419/182022797-65f99eee-13be-4822-bd59-3cbb38b45a85.png)
 ![image](https://user-images.githubusercontent.com/66859419/182022831-2eb5a8e6-9f56-4451-aef2-b1eed9fcaee7.png)
 
