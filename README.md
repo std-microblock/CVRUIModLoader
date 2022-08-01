@@ -13,7 +13,7 @@ ChilloutVR UI Mods 的加载器
 
 First, install [MelonLoader](https://melonwiki.xyz/)
 
-You can either use [CVRMelonAssistant](https://github.com/knah/CVRMelonAssistant/releases/latest/download/CVRMelonAssistant.exe) to install it or use ways mentioned in [MenlonLoader Wiki](https://melonwiki.xyz/#/?id=automated-installation)
+You can either use [CVRMelonAssistant](https://github.com/knah/CVRMelonAssistant/releases/latest/download/CVRMelonAssistant.exe) to install it or use ways mentioned in [MelonLoader Wiki](https://melonwiki.xyz/#/?id=automated-installation)
 
 Then, download the .dll file of CVRUIModLoader, put it in the `ChilloutVR\Mods` folder
 
