@@ -19,8 +19,6 @@ namespace microblock
         private const string UIMOD_EXTRACT_DIR= "ChilloutVR_Data/StreamingAssets/Cohtml/UIResources/UIMods";
         private const string UIMOD_USER_DIR = "UIMods";
 
-        public static HarmonyLib.Harmony MyHarmony = new HarmonyLib.Harmony("cc.microblock.CVRUIModLoader");
-
         public override void OnApplicationStart()
         {
             LoggerInstance.Msg("Hooking To ViewManager.UiStateToggle ...");
@@ -65,7 +63,6 @@ namespace microblock
 
 File.WriteAllText($"{UIMOD_EXTRACT_DIR}/mods.json", JsonConvert.SerializeObject(loadedMods));
 
-            MyHarmony.PatchAll();
             LoggerInstance.Msg("Patches Applied!");
         }
 
