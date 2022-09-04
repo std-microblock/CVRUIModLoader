@@ -36,5 +36,5 @@ using MelonLoader;
 [assembly: AssemblyVersion("1.0.1.1")]
 [assembly: AssemblyFileVersion("1.0.1.1")]
 
-[assembly: MelonInfo(typeof(microblock.CVRUIModLoader), "CVRUIModLoader", "0.1.1", "MicroBlock")]
+[assembly: MelonInfo(typeof(microblock.CVRUIModLoader), "CVRUIModLoader", "0.1.2", "MicroBlock")]
 [assembly: MelonGame("Alpha Blend Interactive", "ChilloutVR")]
