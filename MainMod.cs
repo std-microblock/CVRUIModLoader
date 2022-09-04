@@ -13,16 +13,16 @@ using Newtonsoft.Json;
 
 namespace microblock
 {
-    
+
     public class CVRUIModLoader : MelonMod
     {
-        private const string UIMOD_EXTRACT_DIR= "ChilloutVR_Data/StreamingAssets/Cohtml/UIResources/UIMods";
+        private const string UIMOD_EXTRACT_DIR = "ChilloutVR_Data/StreamingAssets/Cohtml/UIResources/UIMods";
         private const string UIMOD_USER_DIR = "UIMods";
 
         public override void OnApplicationStart()
         {
             LoggerInstance.Msg("Hooking To ViewManager.UiStateToggle ...");
-            LoggerInstance.Msg("This path"+System.Reflection.Assembly.GetExecutingAssembly().Location);
+            LoggerInstance.Msg("This path" + System.Reflection.Assembly.GetExecutingAssembly().Location);
 
 
             Directory.CreateDirectory(UIMOD_EXTRACT_DIR);
@@ -38,10 +38,10 @@ namespace microblock
             }
 
             Directory.CreateDirectory(UIMOD_USER_DIR);
-            var mods=Directory.EnumerateFiles(UIMOD_USER_DIR);
+            var mods = Directory.EnumerateFiles(UIMOD_USER_DIR);
 
             var loadedMods = new List<string>();
-            foreach(var mod in mods)
+            foreach (var mod in mods)
             {
                 if (mod.EndsWith(".uimod"))
                 {
@@ -54,21 +54,21 @@ namespace microblock
                         System.IO.Compression.ZipFile.ExtractToDirectory(mod, extractPath);
                         loadedMods.Add(modName);
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         LoggerInstance.Error($"Failed to load UI Mod -> {mod}: {e}");
                     }
                 }
             }
 
-File.WriteAllText($"{UIMOD_EXTRACT_DIR}/mods.json", JsonConvert.SerializeObject(loadedMods));
+            File.WriteAllText($"{UIMOD_EXTRACT_DIR}/mods.json", JsonConvert.SerializeObject(loadedMods));
 
             LoggerInstance.Msg("Patches Applied!");
         }
 
-       
 
-        [HarmonyPatch(typeof(ViewManager), "markMenuAsReady", new Type[] {  })]
+
+        [HarmonyPatch(typeof(ViewManager), "UiStateToggle", new Type[] { })]
         public static class Patch
         {
             public static void Postfix(ViewManager __instance)
